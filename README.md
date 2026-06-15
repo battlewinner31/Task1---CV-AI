@@ -16,6 +16,8 @@ In the second experiment with dropouts and epoch = 20, the model is predicting w
 
 In the third experiment with no dropouts and epoch=20, it becomes even more confidently wrong about the predictions
 
+In the fourth experiment i tried increasing the learning rate to 0.1, which made the loss function really unstable and the model never learned anything
+
 Training accuracy was 72% and Validation accuracy was 66%
 
 <img width="1727" height="612" alt="image" src="https://github.com/user-attachments/assets/597926ea-0add-4080-adae-2c06f252eb20" />
@@ -37,6 +39,14 @@ Green (exp3, epochs=20, NO dropout)
 
 Failed and Confusing experiments :
 so I really didn't understand why increasing the epochs had no positive effect on the data or doing dropouts, maybe because the dataset was too small but that part confused me. Next thing i didn't understand how to fix the overfitting problem.
+also in experiment 4 i tried to mess with the learning rate increaing it to 0.1 and well that was the worst outcome, the accuracy never exceeded 47%, loss started at 2200, wildly unstable
+EXP 4 : 
+<img width="1389" height="490" alt="image" src="https://github.com/user-attachments/assets/ed47e862-01d7-4551-b3cb-707a6b013c4b" />
+
+
+reason: learning rate too high caused weight updates
+  to overshoot the minimum repeatedly
+model essentially never learned anything meaningful
 
 What i Learnt: 
 from training this model i learnt a lot on what all stuff i would need to do differently to train a good model. 
